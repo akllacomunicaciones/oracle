@@ -1,21 +1,32 @@
 //es una buena práctica declarar la variable al inicio
 
-/* let numeroSecreto = 6;
+//PRIMERO SE DECLARA VARIABLES 
+let numeroSecreto = 6;
 let numeroUsuario = prompt("dime tú número");
 
+
+//if == sí, else == de lo contrario, else if
 if(numeroSecreto == numeroUsuario){
     alert("son iguales")
-}
- */
+}else{
+    alert(`lo siento no acertaste el número, el número secreto era: ${numeroSecreto}`); // ${numeroSecreto}` cuando quiero meter una variiable en texto o cadena de caractéres o strings
+};
+
+
+
+
+
+
+ 
 //DATOS IMPORTANTES: condicionales (if), alertas (alert), solicitudes (prompt)
 
 
 //creando una funcion de suma con console.log
-function suma(x,y){
+/* function suma(x,y){
     console.log(x + y)
 };
 
-suma (3,3);
+suma (3,3); */
 
 //suma(80,20);
 d
