@@ -17,18 +17,19 @@ console.log(ventas - costos); */
 //CONDICIONALES == === !=  <=  >=
 //Dentro de else se puede poner otro if
 
-let numeroSecreto = 5;
-let numeroUsuario = 0; //el valor de esta variable no importa
+let numeroSecreto = Math.floor(Math.random()*100 + 1) //funciones anidadas es decir funcion dentro de funcion//el valor de esta variable no importa;
+let numeroUsuario = 0;
 let intentos = 1;
+let maximosIntentos = 5;
 
-
+console.log(numeroSecreto);
 
 while (numeroUsuario != numeroSecreto){
+    numeroUsuario = prompt("Me indicas un número entre 1 y 100 por favor:"); //puedes poner variables sin let adelante dentro de un while o bucle
 
-    numeroUsuario = prompt("Me indicas un número entre 1 y 10 por favor:"); //puedes poner variables sin let adelante dentro de un while o bucle
-
+    //console.log(numeroUsuario);
     if (numeroUsuario == numeroSecreto) {
-        alert("Acertaste");
+        alert(`Acertaste el número secreto es  ${numeroSecreto}. Lo hiciste en ${intentos} ${intentos == 1 ? "vez" : "veces" }  `); //operadores ternarios //template string
     } else  {
         if (numeroUsuario < numeroSecreto){
             alert("El número es mayor");
@@ -37,11 +38,13 @@ while (numeroUsuario != numeroSecreto){
         if (numeroUsuario > numeroSecreto){
             alert("El número es menor");
         }
-     intentos = intentos + 1;
-     if (intentos > 5){
-        alert("llegaste al número máximo de intentos")
+     //intentos = intentos + 1;
+     intentos++;
+     if (intentos > maximosIntentos){
+        alert(`llegaste al número máximo de ${maximosIntentos} veces`) //template string
         break; //para  finalizar el bucle o while
      }
+
     }
 }
 
