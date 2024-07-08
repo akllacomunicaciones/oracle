@@ -24,3 +24,7 @@ function nuevoJuego(){
 }
 
 /* nuevoJuego(); //invocar la función */
+    
+function hola(params) {
+    
+}

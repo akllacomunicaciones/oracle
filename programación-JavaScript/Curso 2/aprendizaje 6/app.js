@@ -1,0 +1,2 @@
+let numeroSecreto = 10;
+
