@@ -29,6 +29,7 @@ while(numeroUsuario != numeroSecreto){
         alert("no adivinaste")
     }
     intentos = intentos + 1;
+    break;
 }
 
 

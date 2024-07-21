@@ -18,7 +18,10 @@ function adivinaNumero(){
     if(numeroSecreto == numeroUsuario){
         alert("adivinaste FELICIDADES")
     
-    else(numeroSecreto != numeroUsuario)
-        alert("te equivocaste")
-    }   
+    else{
+        alert("te equivocaste");
+
+
+    }
+    }
 }
